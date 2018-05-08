@@ -12,6 +12,17 @@
 		CE558FF020A073400092E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE558FEE20A073400092E0C0 /* Main.storyboard */; };
 		CE558FF220A073420092E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE558FF120A073420092E0C0 /* Assets.xcassets */; };
 		CE558FF520A073420092E0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE558FF320A073420092E0C0 /* LaunchScreen.storyboard */; };
+		CE55900E20A0A0680092E0C0 /* Composicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55900D20A0A0680092E0C0 /* Composicion.swift */; };
+		CE55901020A0A0780092E0C0 /* Nota.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55900F20A0A0780092E0C0 /* Nota.swift */; };
+		CE55901720A185D80092E0C0 /* Piano.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55901620A185D80092E0C0 /* Piano.swift */; };
+		CE55901920A192DF0092E0C0 /* PianoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55901820A192DF0092E0C0 /* PianoController.swift */; };
+		CE55902120A1973E0092E0C0 /* sol.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901A20A1973D0092E0C0 /* sol.wav */; };
+		CE55902220A1973E0092E0C0 /* do.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901B20A1973D0092E0C0 /* do.wav */; };
+		CE55902320A1973E0092E0C0 /* re.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901C20A1973D0092E0C0 /* re.wav */; };
+		CE55902420A1973E0092E0C0 /* la.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901D20A1973D0092E0C0 /* la.wav */; };
+		CE55902520A1973E0092E0C0 /* si.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901E20A1973D0092E0C0 /* si.wav */; };
+		CE55902620A1973E0092E0C0 /* fa.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901F20A1973D0092E0C0 /* fa.wav */; };
+		CE55902720A1973E0092E0C0 /* mi.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55902020A1973D0092E0C0 /* mi.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		CE558FF120A073420092E0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE558FF420A073420092E0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE558FF620A073420092E0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE55900D20A0A0680092E0C0 /* Composicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composicion.swift; sourceTree = "<group>"; };
+		CE55900F20A0A0780092E0C0 /* Nota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nota.swift; sourceTree = "<group>"; };
+		CE55901620A185D80092E0C0 /* Piano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piano.swift; sourceTree = "<group>"; };
+		CE55901820A192DF0092E0C0 /* PianoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoController.swift; sourceTree = "<group>"; };
+		CE55901A20A1973D0092E0C0 /* sol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sol.wav; path = "../../../../../Downloads/assets 2/sol.wav"; sourceTree = "<group>"; };
+		CE55901B20A1973D0092E0C0 /* do.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = do.wav; path = "../../../../../Downloads/assets 2/do.wav"; sourceTree = "<group>"; };
+		CE55901C20A1973D0092E0C0 /* re.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = re.wav; path = "../../../../../Downloads/assets 2/re.wav"; sourceTree = "<group>"; };
+		CE55901D20A1973D0092E0C0 /* la.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = la.wav; path = "../../../../../Downloads/assets 2/la.wav"; sourceTree = "<group>"; };
+		CE55901E20A1973D0092E0C0 /* si.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = si.wav; path = "../../../../../Downloads/assets 2/si.wav"; sourceTree = "<group>"; };
+		CE55901F20A1973D0092E0C0 /* fa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fa.wav; path = "../../../../../Downloads/assets 2/fa.wav"; sourceTree = "<group>"; };
+		CE55902020A1973D0092E0C0 /* mi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = mi.wav; path = "../../../../../Downloads/assets 2/mi.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,7 @@
 		CE558FDE20A073400092E0C0 = {
 			isa = PBXGroup;
 			children = (
+				CE55900C20A0A01F0092E0C0 /* model */,
 				CE558FE920A073400092E0C0 /* MusicBootCamp */,
 				CE558FE820A073400092E0C0 /* Products */,
 			);
@@ -54,14 +77,40 @@
 		CE558FE920A073400092E0C0 /* MusicBootCamp */ = {
 			isa = PBXGroup;
 			children = (
+				CE55901120A180B10092E0C0 /* notes */,
 				CE558FEA20A073400092E0C0 /* AppDelegate.swift */,
 				CE558FEC20A073400092E0C0 /* ViewController.swift */,
 				CE558FEE20A073400092E0C0 /* Main.storyboard */,
 				CE558FF120A073420092E0C0 /* Assets.xcassets */,
 				CE558FF320A073420092E0C0 /* LaunchScreen.storyboard */,
 				CE558FF620A073420092E0C0 /* Info.plist */,
+				CE55901820A192DF0092E0C0 /* PianoController.swift */,
 			);
 			path = MusicBootCamp;
+			sourceTree = "<group>";
+		};
+		CE55900C20A0A01F0092E0C0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE55900D20A0A0680092E0C0 /* Composicion.swift */,
+				CE55900F20A0A0780092E0C0 /* Nota.swift */,
+				CE55901620A185D80092E0C0 /* Piano.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CE55901120A180B10092E0C0 /* notes */ = {
+			isa = PBXGroup;
+			children = (
+				CE55901B20A1973D0092E0C0 /* do.wav */,
+				CE55901F20A1973D0092E0C0 /* fa.wav */,
+				CE55901D20A1973D0092E0C0 /* la.wav */,
+				CE55902020A1973D0092E0C0 /* mi.wav */,
+				CE55901C20A1973D0092E0C0 /* re.wav */,
+				CE55901E20A1973D0092E0C0 /* si.wav */,
+				CE55901A20A1973D0092E0C0 /* sol.wav */,
+			);
+			path = notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +171,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55902720A1973E0092E0C0 /* mi.wav in Resources */,
+				CE55902220A1973E0092E0C0 /* do.wav in Resources */,
 				CE558FF520A073420092E0C0 /* LaunchScreen.storyboard in Resources */,
+				CE55902120A1973E0092E0C0 /* sol.wav in Resources */,
+				CE55902420A1973E0092E0C0 /* la.wav in Resources */,
+				CE55902620A1973E0092E0C0 /* fa.wav in Resources */,
+				CE55902320A1973E0092E0C0 /* re.wav in Resources */,
 				CE558FF220A073420092E0C0 /* Assets.xcassets in Resources */,
+				CE55902520A1973E0092E0C0 /* si.wav in Resources */,
 				CE558FF020A073400092E0C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE558FED20A073400092E0C0 /* ViewController.swift in Sources */,
+				CE55901920A192DF0092E0C0 /* PianoController.swift in Sources */,
+				CE55901720A185D80092E0C0 /* Piano.swift in Sources */,
+				CE55900E20A0A0680092E0C0 /* Composicion.swift in Sources */,
 				CE558FEB20A073400092E0C0 /* AppDelegate.swift in Sources */,
+				CE55901020A0A0780092E0C0 /* Nota.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
