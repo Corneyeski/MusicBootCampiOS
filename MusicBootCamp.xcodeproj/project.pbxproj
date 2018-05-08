@@ -23,6 +23,8 @@
 		CE55902520A1973E0092E0C0 /* si.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901E20A1973D0092E0C0 /* si.wav */; };
 		CE55902620A1973E0092E0C0 /* fa.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55901F20A1973D0092E0C0 /* fa.wav */; };
 		CE55902720A1973E0092E0C0 /* mi.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE55902020A1973D0092E0C0 /* mi.wav */; };
+		CE55902920A1DF640092E0C0 /* Compositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55902820A1DF640092E0C0 /* Compositor.swift */; };
+		CE55902B20A1E5920092E0C0 /* CreditosCompositorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55902A20A1E5920092E0C0 /* CreditosCompositorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		CE55901E20A1973D0092E0C0 /* si.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = si.wav; path = "../../../../../Downloads/assets 2/si.wav"; sourceTree = "<group>"; };
 		CE55901F20A1973D0092E0C0 /* fa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fa.wav; path = "../../../../../Downloads/assets 2/fa.wav"; sourceTree = "<group>"; };
 		CE55902020A1973D0092E0C0 /* mi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = mi.wav; path = "../../../../../Downloads/assets 2/mi.wav"; sourceTree = "<group>"; };
+		CE55902820A1DF640092E0C0 /* Compositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compositor.swift; sourceTree = "<group>"; };
+		CE55902A20A1E5920092E0C0 /* CreditosCompositorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditosCompositorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				CE558FF320A073420092E0C0 /* LaunchScreen.storyboard */,
 				CE558FF620A073420092E0C0 /* Info.plist */,
 				CE55901820A192DF0092E0C0 /* PianoController.swift */,
+				CE55902A20A1E5920092E0C0 /* CreditosCompositorViewController.swift */,
 			);
 			path = MusicBootCamp;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 		CE55900C20A0A01F0092E0C0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CE55902820A1DF640092E0C0 /* Compositor.swift */,
 				CE55900D20A0A0680092E0C0 /* Composicion.swift */,
 				CE55900F20A0A0780092E0C0 /* Nota.swift */,
 				CE55901620A185D80092E0C0 /* Piano.swift */,
@@ -191,9 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55902920A1DF640092E0C0 /* Compositor.swift in Sources */,
 				CE558FED20A073400092E0C0 /* ViewController.swift in Sources */,
 				CE55901920A192DF0092E0C0 /* PianoController.swift in Sources */,
 				CE55901720A185D80092E0C0 /* Piano.swift in Sources */,
+				CE55902B20A1E5920092E0C0 /* CreditosCompositorViewController.swift in Sources */,
 				CE55900E20A0A0680092E0C0 /* Composicion.swift in Sources */,
 				CE558FEB20A073400092E0C0 /* AppDelegate.swift in Sources */,
 				CE55901020A0A0780092E0C0 /* Nota.swift in Sources */,

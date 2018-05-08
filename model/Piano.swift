@@ -11,9 +11,10 @@ import AVFoundation
 
 class Piano {
     
-    var audioPlayer = AVAudioPlayer()
+    private var audioPlayer = AVAudioPlayer()
     var notas:[String:Nota]?
     var composiciones:[String:Composicion]
+    private var index = 0
     
     init(){
         self.composiciones = [String:Composicion]()
@@ -38,24 +39,11 @@ class Piano {
         ]
     }
     
-    func recieveNota(notas:String...) {
-        if notas.count == 1 {
-            play(nota: (self.notas![notas[0]]?.nombre)!)
-        }else{
-            for n in notas {
-                print(n)
-                if n != ""{
-                    play(nota: (self.notas![n]?.nombre)!)
-                }
-                usleep(600000)
-            }
-        }
+    func recieveNota(nota:String) {
+        play(nota: (self.notas![nota]?.nombre)!)
     }
     
     func recieveNota(notas:[String]) {
-        if notas.count == 1 {
-            play(nota: (self.notas![notas[0]]?.nombre)!)
-        }else{
             for n in notas {
                 print(n)
                 if n != ""{
@@ -63,8 +51,17 @@ class Piano {
                 }
                 usleep(300000)
             }
-        }
     }
+    
+    func recieveCompositionName(name:String){
+        
+        Timer.scheduledTimer(timeInterval: 0.5,
+                             target: self,
+                             selector: #selector(self.play(data: )),
+                             userInfo: composiciones[name]?.notas,
+                             repeats: true)
+    }
+    
     private func play(nota:String){
         
         let notaUrl = Bundle.main.url(forResource: nota, withExtension: "wav")
@@ -74,6 +71,26 @@ class Piano {
             audioPlayer.play()
         }else {
             print("no llega nada \(nota)")
+        }
+    }
+    
+    @objc private func play(data:Timer){
+        
+        let nota = data.userInfo as! [String]
+        
+        let notaUrl = Bundle.main.url(forResource: nota[index], withExtension: "wav")
+        
+        if  notaUrl != nil {
+            audioPlayer = try! AVAudioPlayer(contentsOf: notaUrl!)
+            audioPlayer.play()
+        }else {
+            print("no llega nada \(data)")
+        }
+        
+        if index < nota.count-1 {
+            index += 1
+        }else {
+            index = 0
         }
     }
 }

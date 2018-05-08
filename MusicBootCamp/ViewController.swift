@@ -12,8 +12,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        piano.recieveNota(notas: "do")
-        piano.recieveNota(notas: "do","re","mi","fa","sol","la","si")
+        piano.recieveNota(nota: "do")
+        piano.recieveNota(notas: ["do","re","mi","fa","sol","la","si"])
     }
 
     override func didReceiveMemoryWarning() {

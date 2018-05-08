@@ -13,6 +13,8 @@ class PianoController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSo
     let piano:Piano = Piano()
     var choice:String = ""
     
+    var compositor:Compositor = Compositor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +30,8 @@ class PianoController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSo
         piano.composiciones["futurama"] = Composicion(nombre: "futurama",notas: [
             "do","","do","","fa","fa","","sol","","sol","","fa","fa"
             ])
+        
+        //piano.recieveCompositionName(name: "futurama")
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,19 +41,20 @@ class PianoController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func play(_ sender: Any) {
         switch (sender as! UIButton).tag {
         case 0:
-            piano.recieveNota(notas: "do")
+            piano.recieveNota(nota: "do")
+            self.performSegue(withIdentifier: "creditos", sender: nil)
         case 1:
-            piano.recieveNota(notas: "re")
+            piano.recieveNota(nota: "re")
         case 2:
-            piano.recieveNota(notas: "mi")
+            piano.recieveNota(nota: "mi")
         case 3:
-            piano.recieveNota(notas: "fa")
+            piano.recieveNota(nota: "fa")
         case 4:
-            piano.recieveNota(notas: "sol")
+            piano.recieveNota(nota: "sol")
         case 5:
-            piano.recieveNota(notas: "la")
+            piano.recieveNota(nota: "la")
         default:
-            piano.recieveNota(notas: "si")
+            piano.recieveNota(nota: "si")
         }
     }
     
@@ -76,5 +81,18 @@ class PianoController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSo
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         choice = Array(piano.composiciones)[row].key
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "creditos":
+            let c:CreditosCompositorViewController = segue.destination as! CreditosCompositorViewController
+            
+            c.compositor = self.compositor
+            
+        default:
+            print("Error")
+        }
     }
 }
